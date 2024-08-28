@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance Module - Perfect Fleet Management System</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Perfect Fleet Management System</h1>
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="driverModule.html">Driver Module</a></li>
+            <li><a href="fleetModule.html">Fleet Module</a></li>
+            <li><a href="maintenanceModule.html">Maintenance Module</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h2>Maintenance Module</h2>
+        
+        <h3>Add Maintenance Log</h3>
+        <form id="maintenanceForm">
+            <label for="vehicleId">Vehicle ID:</label><br>
+            <input type="text" id="vehicleId" name="vehicleId" required><br>
+
+            <label for="maintenanceDate">Maintenance Date:</label><br>
+            <input type="date" id="maintenanceDate" name="maintenanceDate" required><br>
+
+            <label for="description">Description:</label><br>
+            <textarea id="description" name="description" rows="4" required></textarea><br>
+
+            <label for="cost">Cost:</label><br>
+            <input type="number" id="cost" name="cost" step="0.01" required><br>
+
+            <button type="submit">Add Log</button>
+        </form>
+
+        <h3>Maintenance Logs</h3>
+        <table id="maintenanceTable">
+            <thead>
+                <tr>
+                    <th>Vehicle ID</th>
+                    <th>Maintenance Date</th>
+                    <th>Description</th>
+                    <th>Cost</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Maintenance log data will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/maintenanceModule.js"></script>
+</body>
+</html>

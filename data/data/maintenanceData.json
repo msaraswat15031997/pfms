@@ -1,0 +1,9 @@
+[
+    {
+        "vehicleId": "V001",
+        "maintenanceDate": "2024-08-20",
+        "description": "Oil Change",
+        "cost": 200
+    }
+   
+]

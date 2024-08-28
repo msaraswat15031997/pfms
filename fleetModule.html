@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleet Module</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Perfect Fleet Management System</h1>
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="driverModule.html">Driver Module</a></li>
+            <li><a href="fleetModule.html">Fleet Module</a></li>
+            <li><a href="maintenanceModule.html">Maintenance Module</a></li>
+        </ul>
+    </div>
+    <h2>Fleet Module</h2>
+    
+    <form id="addFleetForm">
+        <label for="vehicleType">Vehicle Type:</label>
+        <input type="text" id="vehicleType" name="vehicleType" required><br>
+        <label for="modelNumber">Model Number:</label>
+        <input type="text" id="modelNumber" name="modelNumber" required><br>
+        <label for="chassisNumber">Chassis Number:</label>
+        <input type="text" id="chassisNumber" name="chassisNumber" required><br>
+        <label for="purchaseAmount">Purchase Amount:</label>
+        <input type="number" id="purchaseAmount" name="purchaseAmount" required><br>
+        <label for="purchaseDate">Purchase Date:</label>
+        <input type="date" id="purchaseDate" name="purchaseDate" required><br>
+        <button type="submit">Add Fleet</button>
+    </form>
+
+    <table id="fleetTable">
+        <thead>
+            <tr>
+                <th>Vehicle Type</th>
+                <th>Model Number</th>
+                <th>Chassis Number</th>
+                <th>Purchase Amount</th>
+                <th>Purchase Date</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Fleet data will be populated here -->
+        </tbody>
+    </table>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

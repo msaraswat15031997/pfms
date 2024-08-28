@@ -1,0 +1,13 @@
+[
+    {
+        "driverName": "John Doe",
+        "vehicleId": "V001",
+        "startTime": "2024-08-26T08:00",
+        "endTime": "2024-08-26T10:00",
+        "distance": 120,
+        "route": "Route A",
+        "fuelConsumption": 15.5,
+        "tripDuration": 2.0
+    }
+    
+]

@@ -1,0 +1,10 @@
+[
+    {
+        "vehicleType": "Truck",
+        "modelNumber": "T2020",
+        "chassisNumber": "CH123456",
+        "purchaseAmount": 50000,
+        "purchaseDate": "2024-01-15"
+    }
+ 
+]

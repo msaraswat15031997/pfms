@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Module - Perfect Fleet Management System</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Perfect Fleet Management System</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="driverModule.html">Driver Module</a></li>
+            <li><a href="fleetModule.html">Fleet Module</a></li>
+            <li><a href="maintenanceModule.html">Maintenance Module</a></li>
+            <li><a href="adminModule.html">Admin Module</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h2>Admin Dashboard</h2>
+
+        <div class="dashboard-section">
+            <h3>Driver Data</h3>
+            <input type="text" id="driverFilter" placeholder="Search Drivers">
+            <table id="driverData">
+                <thead>
+                    <tr>
+                        <th>Driver Name</th>
+                        <th>Vehicle ID</th>
+                        <th>Start Time</th>
+                        <th>End Time</th>
+                        <th>Distance</th>
+                        <th>Route</th>
+                        <th>Fuel Consumption</th>
+                        <th>Trip Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Driver data will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="dashboard-section">
+            <h3>Fleet Data</h3>
+            <input type="text" id="fleetFilter" placeholder="Search Fleet">
+            <table id="fleetData">
+                <thead>
+                    <tr>
+                        <th>Vehicle Type</th>
+                        <th>Model Number</th>
+                        <th>Chassis Number</th>
+                        <th>Purchase Amount</th>
+                        <th>Purchase Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Fleet data will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="dashboard-section">
+            <h3>Maintenance Data</h3>
+            <input type="text" id="maintenanceFilter" placeholder="Search Maintenance">
+            <table id="maintenanceData">
+                <thead>
+                    <tr>
+                        <th>Vehicle ID</th>
+                        <th>Maintenance Date</th>
+                        <th>Description</th>
+                        <th>Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Maintenance data will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/adminModule.js"></script>
+</body>
+</html>
